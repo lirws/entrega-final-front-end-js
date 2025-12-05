@@ -8,13 +8,8 @@ body {
     font-family: "Montserrat", "Roboto Slab", sans-serif;
     background: linear-gradient(to bottom, #f4f4f4, #e0e0e0);
     min-height: 100vh;
-<<<<<<< HEAD
       padding-top: 13rem;
-=======
-      padding-top: 20rem;
->>>>>>> d9dc91d7c8b9bba4de3f728bfaaf8ea583af1fd2
 }
-
 .tituloproductos {
     display: flex;
     justify-content: center;
@@ -60,11 +55,8 @@ header {
 }
 
 .logo img {
-<<<<<<< HEAD
     max-width: 5rem;
-=======
-    max-width: 200px;
->>>>>>> d9dc91d7c8b9bba4de3f728bfaaf8ea583af1fd2
+
     height: auto;
 }
 nav ul {
