@@ -8,7 +8,7 @@ body {
     font-family: "Montserrat", "Roboto Slab", sans-serif;
     background: linear-gradient(to bottom, #f4f4f4, #e0e0e0);
     min-height: 100vh;
-      padding-top: 13rem;
+      padding-top: 10rem;
 }
 .tituloproductos {
     display: flex;
@@ -43,6 +43,8 @@ header {
     width: 100%;
     z-index: 999;
     box-shadow: 0 2px 6px rgb(83, 3, 3); /* opcional */
+flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .header-top {
@@ -55,7 +57,7 @@ header {
 }
 
 .logo img {
-    max-width: 5rem;
+    max-width: 4rem;
 
     height: auto;
 }
