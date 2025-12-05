@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", "Roboto Slab", sans-serif;
+    background: linear-gradient(to bottom, #f4f4f4, #e0e0e0);
+    min-height: 100vh;
+      padding-top: 20rem;
+}
+
+.tituloproductos {
+    display: flex;
+    justify-content: center;
+
+          margin-bottom: 20px;
+}
+.grid-container {
+    display:  grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    gap: 10px;
+    min-height: 100vh;
+    padding: 10px;
+    flex: w;
+}
+
+
+header {
+    grid-area: header;
+    background: #91131af5;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 6px rgb(83, 3, 3); /* opcional */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1200px;
+    flex: wrap;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+.titulo-home {
+    font-family: "Roboto Slab", serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.parrafo-home {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#servicios-container {
+    margin-bottom: 40px;
+}
+
+#contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+     gap: 15px;
+}
+
+.contenedor-tarjetas {
+    background: white;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    flex: 1 1 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.tarjeta-producto img {
+    width: 5rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px; 
+    
+}
+
+.tarjeta-producto {
+    font-size: 0.9rem;
+    margin-bottom: 10px; 
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+ 
+    max-width: 700px;
+}
+
+.btn {
+    background: #771116f5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #91131af5;
+}
+
+#contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contacto label {
+    font-weight: 600;
+}
+
+#contacto input,
+#contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#contacto button {
+    background: #91131af5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#contacto button:hover {
+    background: #ac1119f5;
+}
+
+aside {
+    grid-area: aside;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+aside h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+aside p {
+    font-size: 0.9rem;
+}
+
+footer {
+    grid-area: footer;
+    background: #681014f5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    .header-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    audio {
+        max-width: 100%;
+    }
+
+    .tarjeta-producto {
+        flex-direction: column;
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .tarjeta-producto img {
+        width: 100%;
+        max-height: 200px;
+        border-radius: 10px 10px 0 0; 
+    }
+
+    .producto-info {
+        width: 100%;
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .producto-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .producto-info p {
+        font-size: 0.85rem;
+    }
+
+    #contacto {
+        padding: 0 20px;
+        margin: 20px;
+    }
+
+    aside {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-home {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-producto {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .producto-info {
+        padding: 10px;
+    }
+
+    .producto-info h3 {
+        font-size: 1rem;
+    }
+
+    .producto-info p {
+        font-size: 0.8rem;
+    }
+
+    #contacto {
+        padding: 10px;
+    }
+}
+
+#contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;        
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+
+.tarjeta-producto {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 700px;
+    width: 100%;
+}
+
+.tarjeta-producto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.producto-info {
+    padding: 30px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    #contenedor-carrito {
+        gap: 60px;   
+    }
+    
+    .tarjeta-producto {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .tarjeta-producto img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .producto-info {
+        padding: 25px;
+    }
+}

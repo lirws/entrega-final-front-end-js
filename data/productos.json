@@ -1,0 +1,7 @@
+[
+    { "id": "1", "nombre": "Arbol de Navidad 1.80m", "img": "img/arbol.jpg", "precio": 89000 },
+    { "id": "2", "nombre": "Guirnaldas LED cálidas", "img": "img/guirnaldas.jpg", "precio": 15999 },
+    { "id": "3", "nombre": "Bolas navideñas rojas", "img": "img/bola.jpg", "precio": 5000 },
+    { "id": "4", "nombre": "Estrella para árbol", "img": "img/estrella.jpg", "precio": 6000 },
+    { "id": "5", "nombre": "Papá Noel decorativo", "img": "img/noel.jpg", "precio": 4999 }
+]
