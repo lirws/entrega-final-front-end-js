@@ -123,7 +123,7 @@ main {
 .tarjeta-producto img {
     width: 5rem;
     height: auto;
-    object-fit: cover;
+    object-fit:scale-down;
     border-radius: 10px 0 0 10px; 
     
 }
@@ -274,12 +274,14 @@ footer {
         flex-direction: column;
         max-width: 100%;
         min-height: auto;
+        
     }
 
     .tarjeta-producto img {
         width: 100%;
         max-height: 200px;
         border-radius: 10px 10px 0 0; 
+        object-fit: scale-down;
     }
 
     .producto-info {
@@ -367,7 +369,7 @@ footer {
 .tarjeta-producto img {
     width: 250px;
     height: 250px;
-    object-fit: cover;
+        object-fit: scale-down;
 }
 
 .producto-info {
@@ -391,6 +393,7 @@ footer {
     .tarjeta-producto img {
         width: 100%;
         height: 250px;
+            object-fit: scale-down;
     }
     
     .producto-info {
